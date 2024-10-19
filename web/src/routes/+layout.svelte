@@ -4,6 +4,12 @@
   import Footer from "./component/footer.svelte";
 </script>
 
-<Header />
-<slot />
-<Footer />
+<div class="min-h-screen flex flex-col w-full">
+  <Header />
+
+  <main class="flex-grow scroll-smooth">
+    <slot />
+  </main>
+
+  <Footer />
+</div>
