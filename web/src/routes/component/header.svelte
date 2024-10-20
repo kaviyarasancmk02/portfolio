@@ -1,7 +1,7 @@
 <script lang="ts">
   import {onMount} from "svelte";
   import kaviyarsanStylish from "../../assets/images/kaviyarasanFormal.png";
-  import MenuBotton from "./menubotton.svelte";
+  import MenuBotton from "./menuBotton.svelte";
 
   let i = 0;
   const verticalLine = '<span class="w-0.5 h-6 bg-gray-200 mx-4"></span>';
