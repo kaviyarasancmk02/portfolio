@@ -2,6 +2,9 @@
   import {onMount} from "svelte";
   import kaviyarsanStylish from "../../assets/images/kaviyarasanFormal.png";
   import MenuBotton from "./menuBotton.svelte";
+  import {page} from "$app/stores";
+
+  $: currentRoute = $page.url.pathname.replace(/^\/+/, "");
 
   let i = 0;
   const verticalLine = '<span class="w-0.5 h-6 bg-gray-200 mx-4"></span>';
@@ -16,7 +19,6 @@
     ["Blogs", "blogs"],
   ];
 
-  let selectedNav = "Home";
   let isMenuShow = false;
   let menuHeight = "h-0 p-0 opacity-0";
 
@@ -78,13 +80,12 @@
         <a
           id="navLink"
           href={`/${link[1]}`}
-          class={`${selectedNav === link[0] ? "text-cyan-500" : ""} hover:text-cyan-500 active:text-blue-500 transition-all duration-300 p-1`}
-          on:click={() => (selectedNav = link[0])}
+          class={`${currentRoute === link[1] ? "text-cyan-500" : ""} hover:text-cyan-500 active:text-blue-500 transition-all duration-300 p-1`}
         >
           {link[0]}
         </a>
         <span
-          class={`${selectedNav === link[0] ? "w-full" : "w-0"} 
+          class={`${currentRoute === link[1] ? "w-full" : "w-0"} 
           absolute bottom-0 left-0 h-0.5 rounded bg-cyan-400 transition-all duration-300 ease-in-out group-hover:w-full`}
         ></span>
       </button>
@@ -99,13 +100,12 @@
         <a
           id="navLink"
           href={`/${link[1]}`}
-          class={`${selectedNav === link[0] ? "text-cyan-500" : ""} hover:text-cyan-500 active:text-blue-500 transition-all duration-300 p-1`}
-          on:click={() => (selectedNav = link[0])}
+          class={`${currentRoute === link[1] ? "text-cyan-500" : ""} hover:text-cyan-500 active:text-blue-500 transition-all duration-300 p-1`}
         >
           {link[0]}
         </a>
         <span
-          class={`${selectedNav === link[0] ? "w-full" : "w-0"} 
+          class={`${currentRoute === link[1] ? "w-full" : "w-0"} 
           absolute bottom-0 left-0 h-0.5 rounded bg-cyan-400 transition-all duration-300 ease-in-out group-hover:w-full`}
         ></span>
       </li>
