@@ -5,11 +5,15 @@
 </script>
 
 <div class="min-h-screen flex flex-col w-full">
-  <Header />
+  <section class="">
+    <Header />
+  </section>
 
-  <main class="flex-grow scroll-smooth">
+  <main class="flex-grow">
     <slot />
   </main>
 
-  <Footer />
+  <section class="">
+    <Footer />
+  </section>
 </div>

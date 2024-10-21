@@ -1,6 +1,5 @@
 <script>
   import {userDetails} from "../../data/userDetails.js";
-  console.log(typeof userDetails);
   const verticalLine =
     '<div class="hidden md:block rounded w-0.5 h-32 bg-gray-100 opacity-10"></div>';
   const horizontalLine =

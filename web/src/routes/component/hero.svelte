@@ -106,6 +106,9 @@
           </span>
         {/each}
       </ul>
+      <span class="w-full flex items-center justify-end">
+        <a href="../skills" class="hover:underline text-blue-600">Know more</a>
+      </span>
     </div>
   </div>
 </section>
