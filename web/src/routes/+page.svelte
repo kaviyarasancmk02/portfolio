@@ -1,11 +1,9 @@
 <script>
   import Hero from "./component/hero.svelte";
-
-  const verticalLine = '<div class="w-1 h-80 bg-gray-200"></div>';
-  const horizontalLine = '<div class="w-2/3 h-0.5 bg-gray-200"></div>';
+  import Experience from "./experience/+page.svelte";
 </script>
 
-<div class="flex flex-col items-center justify-center">
+<div class="w-full">
   <Hero />
-  {@html horizontalLine}
+  <Experience />
 </div>
