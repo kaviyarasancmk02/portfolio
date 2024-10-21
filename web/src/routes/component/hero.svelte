@@ -18,7 +18,7 @@
 
 <section
   id="home"
-  class="md:min-h-[90vh] bg-white text-gray-800 transition-all duration-300 ease-in-out"
+  class="md:min-h-[90vh] bg-white text-gray-800 transition-all duration-300 ease-in-out flex items-center justify-center"
 >
   <div
     class="p-4 md:p-6 lg:p-10 flex flex-col md:flex-row items-center justify-stretch gap-4"

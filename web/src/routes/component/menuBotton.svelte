@@ -34,10 +34,10 @@
       class={`${isMenuShow ? "bg-indigo-500" : "bg-fuchsia-500"} w-0.5 h-3 rounded-sm m-0.5`}
     ></div>
     <div
-      class={`${isMenuShow ? "bg-indigo-500" : "bg-indigo-500"} top-0.5 left-1.5 rotate-45 w-0.5 h-2 absolute rounded-sm`}
+      class={`${isMenuShow ? "bg-indigo-500" : "bg-fuchsia-500"} top-0.5 left-1.5 rotate-45 w-0.5 h-2 absolute rounded-sm`}
     ></div>
     <div
-      class={`${isMenuShow ? "bg-indigo-500" : "bg-indigo-500"} top-0.5 right-1.5 -rotate-45 w-0.5 h-2 absolute rounded-sm`}
+      class={`${isMenuShow ? "bg-indigo-500" : "bg-fuchsia-500"} top-0.5 right-1.5 -rotate-45 w-0.5 h-2 absolute rounded-sm`}
     ></div>
   </div>
 </div>
