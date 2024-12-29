@@ -80,7 +80,7 @@
 		fire: 'bg-gradient-to-tl from-red-500 via-orange-500 to-yellow-500',
 		aurora: 'bg-gradient-to-br from-green-400 via-cyan-400 to-purple-500',
 		dawn: 'bg-gradient-to-tr from-yellow-300 via-pink-300 to-purple-400',
-		ice: 'bg-gradient-to-tr from-cyan-100 via-blue-200 to-indigo-300'
+		ice: 'bg-gradient-to-bl from-white via-cyan-100 to-white'
 	};
 
 	export const transitionStyles = {
@@ -316,5 +316,47 @@
 		horizontalDarkMd: 'hidden md:block w-2/3 h-0.5 bg-gray-700',
 		horizontalDarkLg: 'hidden lg:block w-3/4 h-0.5 bg-gray-700',
 		horizontalDarkXl: 'hidden xl:block w-full h-0.5 bg-gray-700'
+	};
+
+	export const containerStyles = {
+		containerDefault: 'p-4 px-6 m-4 border border-gray-300 rounded-md shadow-md bg-white',
+		containerFullWidth: 'w-full p-6 m-4 border border-gray-200 rounded-lg shadow-lg bg-gray-100',
+		containerResponsive:
+			'p-4 md:p-8 lg:p-12 mx-4 md:mx-8 lg:mx-12 border border-gray-300 rounded-md shadow-md',
+		containerCentered:
+			'flex items-center justify-center w-full h-screen p-6 border border-gray-300 rounded-lg shadow-xl bg-white',
+		containerCard: 'w-80 p-6 m-6 border border-gray-300 rounded-lg shadow-lg bg-white',
+		containerGradient:
+			'p-6 m-6 border border-transparent rounded-lg shadow-xl bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600',
+		containerFixedSize: 'w-64 h-80 p-4 border border-gray-300 rounded-md shadow-lg bg-white',
+		containerFullHeight: 'h-screen p-6 m-4 border border-gray-200 rounded-lg shadow-md bg-gray-50',
+		containerFullScreenCentered:
+			'fixed inset-0 m-auto w-2/3 h-2/3 p-6 border border-gray-300 rounded-lg shadow-xl bg-white',
+		containerRoundedShadow: 'p-6 m-4 border border-gray-300 rounded-xl shadow-2xl bg-white',
+		containerTransparent: 'p-6 m-4 border border-gray-300 rounded-md shadow-sm bg-transparent',
+		containerWithOpacity:
+			'p-6 m-4 border border-gray-300 rounded-md shadow-md bg-gray-800 bg-opacity-70',
+		containerLargeShadow: 'p-8 m-6 border border-gray-300 rounded-lg shadow-2xl bg-white',
+		containerHoverEffect:
+			'p-6 m-4 border border-gray-300 rounded-md shadow-md bg-white hover:bg-gray-100 hover:shadow-lg transition-all',
+		containerMinimal: 'p-2 m-2 border border-gray-200 rounded-md shadow-sm bg-white',
+		containerFullScreen:
+			'w-screen h-screen p-8 m-0 border border-gray-300 rounded-lg shadow-lg bg-white',
+		containerFixedTop:
+			'fixed top-0 left-0 w-full p-4 m-0 border border-gray-300 rounded-md shadow-lg bg-white',
+		containerSmallLargeRadius:
+			'w-48 h-48 p-4 m-4 border border-gray-300 rounded-3xl shadow-xl bg-white',
+		containerRoundedTop:
+			'w-full h-auto p-6 m-4 border border-gray-300 rounded-t-lg shadow-md bg-white',
+		containerRoundedBottom:
+			'w-full h-auto p-6 m-4 border border-gray-300 rounded-b-lg shadow-md bg-white',
+		containerMultipleShadows:
+			'p-6 m-4 border border-gray-300 rounded-lg shadow-md shadow-lg bg-white',
+		containerGradientWithBorder:
+			'p-6 m-4 border-4 border-transparent rounded-lg shadow-xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-600',
+		containerResponsivePaddingMargin:
+			'p-4 md:p-6 lg:p-8 m-4 md:m-6 lg:m-8 border border-gray-300 rounded-md shadow-md bg-white',
+		containerMaxWidth:
+			'w-full max-w-4xl mx-auto p-6 m-4 border border-gray-300 rounded-md shadow-md bg-white'
 	};
 </script>
